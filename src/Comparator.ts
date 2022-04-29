@@ -1,7 +1,13 @@
+/**
+ * @public
+ */
 export interface Comparator<T> {
   (a: T, b: T): number;
 }
 
+/**
+ * @public
+ */
 export interface ComparatorX<T> extends Comparator<T> {
   reversed(): ComparatorX<T>;
   thenComparing<U>(
@@ -11,6 +17,9 @@ export interface ComparatorX<T> extends Comparator<T> {
   thenComparingBy(other: Comparator<T>): ComparatorX<T>;
 }
 
+/**
+ * @public
+ */
 export namespace Comparator {
   export function comparing<T, U>(
     keyExtractor: (value: T) => U,
@@ -30,6 +39,9 @@ export namespace Comparator {
   }
 }
 
+/**
+ * @public
+ */
 export namespace ComparatorX {
   export function from<T>(comparator: Comparator<T>): ComparatorX<T> {
     return Object.assign(comparator, {
