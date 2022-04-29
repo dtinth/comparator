@@ -1,11 +1,4 @@
 /**
- * Tools for creating {@link (Comparator:interface)}s.
- * The API design is based on Java’s {@link `java.util.Comparator` | https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html} interface.
- *
- * @packageDocumentation
- */
-
-/**
  * A comparator can be used to compare two objects in order to determine their ordering.
  *
  * It is a function that takes two arguments and returns a negative number if the first

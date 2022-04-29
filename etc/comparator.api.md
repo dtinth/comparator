@@ -36,6 +36,4 @@ export namespace ComparatorX {
     export function from<T>(comparator: Comparator<T>): ComparatorX<T>;
 }
 
-// (No @packageDocumentation comment for this package)
-
 ```
