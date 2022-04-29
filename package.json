@@ -1,6 +1,6 @@
 {
   "name": "@dtinth/comparator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "scripts": {
     "build": "heft build",
     "test": "heft test && npm run after-test",

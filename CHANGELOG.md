@@ -1,5 +1,11 @@
 # @dtinth/comparator
 
+## 0.0.3
+
+### Patch Changes
+
+- 892730f: Fix README syntax
+
 ## 0.0.2
 
 ### Patch Changes
