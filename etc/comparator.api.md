@@ -4,13 +4,13 @@
 
 ```ts
 
-// @public (undocumented)
+// @public
 export interface Comparator<T> {
     // (undocumented)
     (a: T, b: T): number;
 }
 
-// @public (undocumented)
+// @public
 export namespace Comparator {
     // (undocumented)
     export function comparing<T, U>(keyExtractor: (value: T) => U, keyComparator?: Comparator<U>): ComparatorX<T>;
@@ -20,19 +20,19 @@ export namespace Comparator {
     export function reverseOrder<T>(): ComparatorX<T>;
 }
 
-// @public (undocumented)
+// @public
 export interface ComparatorX<T> extends Comparator<T> {
     // (undocumented)
     reversed(): ComparatorX<T>;
     // (undocumented)
     thenComparing<U>(keyExtractor: (value: T) => U, keyComparator?: Comparator<U>): ComparatorX<T>;
-    // (undocumented)
+    // @beta (undocumented)
     thenComparingBy(other: Comparator<T>): ComparatorX<T>;
 }
 
-// @public (undocumented)
+// @public
 export namespace ComparatorX {
-    // (undocumented)
+    // @beta
     export function from<T>(comparator: Comparator<T>): ComparatorX<T>;
 }
 
