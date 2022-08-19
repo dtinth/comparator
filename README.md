@@ -5,3 +5,5 @@ Tools for creating comparator functions. The API design is based on Java’s [ja
 ## API documentation
 
 <https://apiref.page/package/@dtinth/comparator>
+
+![API reference screenshot](https://ss.dt.in.th/api/screenshots/apiref-dtinth-comparator.png)
